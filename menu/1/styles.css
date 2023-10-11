@@ -1,0 +1,265 @@
+body {
+     margin: .75vh;
+    height: 100%;
+    overflow-y: hidden;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 1.25vw;
+    position: relative;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+/*    background: url('../buffer.png') center bottom no-repeat;*/
+/*    background-size: contain;*/
+    position: relative;
+    background-color: black;
+}
+
+#popup:hover {
+     cursor: url("buffer.png"), auto;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    z-index: 1000;
+}
+
+span{
+    transition: .25s ease;
+}
+
+span:hover{
+    color: transparent;
+    text-shadow: 0px 0px .3em #000000;
+}
+
+#top{
+    margin-top: -1vh;
+}
+#arrow{
+    font-size: 2.5vh;
+}
+
+.timer {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* Align #timer to the right */
+    z-index: 100;
+}
+
+#timer {
+    border: 1.25px solid black;
+    border-radius: .4em;
+    background-color: white;
+    font-family: 'BBB Strobo Variable';
+    text-align: center;
+    width: 3.25em;
+    padding: .15em;
+    padding-top: .35em;
+    margin: 0;
+    font-size: 1vw; /* Set initial font size */
+    transition: font-size .75s ease; /* Add transition for smoother font size change */
+    position: fixed;
+}
+
+pre {
+    margin-top: 2.5vh;
+    font-family: 'PP Neue Montreal';
+    font-size:1vw;
+    line-height: 3.05vh;
+    width: 25%;
+}
+
+
+
+.body{
+	display: flex;
+	box-sizing: border-box;
+    font-family: 'PP Neue Montreal';
+    font-size:1vw;
+    line-height: 3vh;
+
+}
+
+.wholetext{
+	box-sizing: border-box;
+	width:  100%;
+    text-align: justify;
+	margin-top: -1.5vh;
+    margin-bottom: -2vh;
+}
+
+
+img {
+    border-radius: 7.5%;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .25s ease;
+}
+
+.image-container {
+    position: absolute;
+    top: 50%;
+    right: 28%;
+    transform: translateX(50%);
+
+}
+
+#image1{
+    width: 20vw;
+
+}
+#image2{
+    width: 12vw;
+}
+#image3{
+    width: 28vw;
+}
+#image4{
+    width: 20vw;
+}
+#image5{
+    width:12vw;
+}
+#image6{
+    width: 16vw;
+}
+#image7{
+    width: 16vw;
+}
+#image8{
+    width: 36vw;
+}
+
+#image9{
+    width: 40vw;
+}
+#image10{
+    width: 16vw;
+}
+#image11{
+    width: 16vw;
+}
+#image12{
+    width: 2vw;
+}
+#image13{
+    width: 12vw;
+}
+#image14{
+    width: 20vw;
+}
+#image15{
+    width: 12vw;
+}
+#image16{
+    width: 12vw;
+}
+#image17{
+    width: 24vw;
+}
+#image18{
+    width: 12vw;
+}
+#image19{
+    width: 16vw;
+}
+#image20{
+    width: 16vw;
+}
+#image21{
+    width: 8vw;
+}
+#image22{
+    width: 8vw;
+}
+#image23{
+    width: 8vw;
+}
+#image24{
+    width: 20vw;
+}
+#image25{
+    width: 12vw;
+}
+#image26{
+    width: 8vw;
+}
+#image27{
+    width: 20vw;
+}
+#image28{
+    width: 20vw;
+}
+#image29{
+    width: 28vw;
+}
+
+#popup{
+    position: fixed;
+    background: white;
+    top: 1%;
+    left: 0;
+    right: 0;
+    border: 1px solid black;
+    border-radius: .5em;
+    font-family: 'PP Neue Montreal';
+    text-align: left;
+    padding: .2em;
+    padding-top: .2em;
+    margin: 0.75;
+    margin-left: .75vw;
+    margin-right: .75vw;
+    display: block;
+    font-size: 18vh;
+    max-width: 96%;
+    justify-content: center;
+    line-height: 95%;
+    font-style: normal;
+    font-weight: 500;
+/*    line-height: normal;*/
+    text-transform: uppercase;
+    display: none;
+}
+
+#popup:hover{
+    overflow-y: hidden;
+}
+
+.countdown{
+    background: black;
+    color: white;
+    border-radius: 100%;
+    padding-top: .4em;
+    padding-left: .3em;
+    padding-right: .3em;
+    padding-bottom: .15em;
+    font-style: normal;
+    text-align: center;
+    font-family: 'BBB Strobo Variable';
+    -webkit-text-stroke: 2px;
+    line-height: 100%;
+    font-size: 17vh;
+    margin-top: -4.5vh;
+    margin-right: .75vw;
+    text-align: center;;
+    float: right; /* Align to the right */
+}
+
+

@@ -1,0 +1,191 @@
+body {
+     margin: .75vh;
+    height: 100%;
+    overflow-x: hidden;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 1.25vw;
+    position: relative;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+/*    background: url('../buffer.png') center bottom no-repeat;*/
+/*    background-size: contain;*/
+    position: relative;
+    background-color: black;
+}
+
+#arrow{
+    font-size: 2.5vh;
+}
+.timer {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+#timer {
+    background-color: white;
+    border: 1.25px solid;
+    border-radius: .4em;
+    font-family: 'BBB Strobo Variable';
+    text-align: center;
+    width: 3.25em;
+    padding: .15em;
+    padding-top: .35em;
+    margin: 0;
+    font-size: 2.25vw; /* Set initial font size */
+    transition: font-size .75s ease-in; /* Add transition for smoother font size change */
+    position: fixed;
+    z-index: 99;
+}
+
+p {
+    font-family: 'PP Neue Montreal';
+    font-size: 2.25vw;
+}
+
+#popup:hover {
+     cursor: url("buffer.png"), auto;
+}
+.body{
+	display: flex;
+	box-sizing: border-box;
+}
+
+.wholetext{
+	display: flex;
+	box-sizing: border-box;
+	width:  100%;
+    margin-top: 4vh;
+}
+
+.text p {
+    position: relative;
+}
+
+
+img{
+    border-radius: 10%;
+    display: block;
+}
+
+#patience{
+   font-family: 'BBB Strobo Variable';
+   border: 1px solid black;
+   display: flex;
+   position: fixed;
+   color: white;
+   background: black;
+   justify-content: center;
+   margin: 0 auto;
+   top: 2vh;
+   left: 0;
+   right: 0;
+   border-radius: .25em; 
+   vertical-align: center;
+   padding-top: .3em;
+   width: 17%; 
+   font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+   font-size: 4vw;
+   z-index: 10;
+   visibility: hidden;
+/*   transform: rotate(5deg);*/
+
+}
+
+#popup{
+    position: fixed;
+    background: white;
+    top: 1%;
+    left: 0;
+    right: 0;
+    border: 1px solid black;
+    border-radius: .5em;
+    font-family: 'PP Neue Montreal';
+    text-align: left;
+    padding: .2em;
+    padding-top: .2em;
+    margin: 0.75;
+    margin-left: .75vw;
+    margin-right: .75vw;
+    display: block;
+    font-size: 18vh;
+    max-width: 100%;
+    justify-content: center;
+    line-height: 95%;
+    font-style: normal;
+    font-weight: 500;
+/*    line-height: normal;*/
+    text-transform: uppercase;
+    display: none;
+}
+
+#popup:hover{
+    overflow-y: hidden;
+}
+
+.countdown{
+    background: black;
+    color: white;
+    border-radius: 100%;
+    padding-top: .4em;
+    padding-left: .3em;
+    padding-right: .3em;
+    padding-bottom: .15em;
+    font-style: normal;
+    text-align: center;
+    font-family: 'BBB Strobo Variable';
+    -webkit-text-stroke: 2px;
+    line-height: 100%;
+    font-size: 17vh;
+    margin-top: -4.5vh;
+    margin-right: .75vw;
+    text-align: center;;
+    float: right; /* Align to the right */
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    z-index: 1000;
+}
+
+#top{
+    margin-top: -1vh;
+}
+#arrow{
+}
+
+.paragraph-wrapper {
+    position: relative;
+    /* Add other styles as needed */
+}
+
+.black-rectangle {
+    position: absolute;
+    background-color: black;
+    height: 2.25vw;
+    opacity: 90%;
+    border-radius: 6px;
+}
+.black-rectangle:hover{
+    cursor: url('buffer.png'),auto;
+}
+
+
+

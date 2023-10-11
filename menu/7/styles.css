@@ -1,0 +1,269 @@
+body {
+     margin: .75vh;
+    height: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 1.25vw;
+    position: relative;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+/*    background: url('../buffer.png') center bottom no-repeat;*/
+/*    background-size: contain;*/
+    position: relative;
+    background-color: black;
+}
+
+#popup:hover {
+     cursor: url("buffer.png"), auto;
+}
+.timer {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; 
+}
+#arrow{
+    font-size: 2.5vh;
+}
+
+#timer {
+    background-color: white;
+    border: 1.25px solid;
+    border-radius: .4em;
+    font-family: 'BBB Strobo Variable';
+    text-align: center;
+    width: 3.25em;
+    padding: .15em;
+    padding-top: .35em;
+    margin: 0;
+    font-size: 2vw; /* Set initial font size */
+    transition: font-size .75s ease-in; /* Add transition for smoother font size change */
+    position: fixed;
+    z-index: 99;
+}
+
+p {
+    font-family: 'PP Neue Montreal';
+}
+
+.body{
+	display: flex;
+	box-sizing: border-box;
+}
+
+.wholetext{
+	display: flex;
+	box-sizing: border-box;
+	width:  100%;
+    margin-top: 10vh;
+}
+
+.text {
+    
+}
+
+img{
+    border-radius: 10%;
+    display: block;
+}
+
+#img1{
+    width: 35vw;
+    margin-left: 54vw;
+    margin-bottom: 41vh;
+    transition: 2s ease-out;
+}
+
+#img2{
+    width: 15vw;
+    margin-left: 11vw;
+    margin-bottom: -7vh;
+    transition: 0.5s ease-out;
+}
+
+#img3{
+    width: 30vw;
+    margin-left: 57vw;
+    margin-bottom: 32vh;
+    transition: 1.75s ease-out;
+}
+
+#img4{
+    width: 50vw;
+    margin-left: 1.75vw;
+    margin-bottom: 11vh;
+    transition: 3s ease-out;
+}
+
+#img5{
+    width: 15vw;
+    margin-left: 62vw;
+    margin-bottom: 26vh;
+    transition: 0.5s ease-out;
+}
+
+#img6{
+    width: 39vw;
+    margin-left: 59vw;
+    margin-bottom: 92vh;
+    transition: 2.35s ease-out;
+}
+
+#img7{
+    width: 30vw;
+    margin-left: 5vw;
+    margin-bottom: 11vh;
+    transition: 1s ease-out;
+}
+
+
+#img8{
+    width: 10vw;
+    margin-left: 34vw;
+    margin-bottom: 20vh;
+    ransition: .25s ease-out;
+}
+
+
+#imgcontainer{
+    position: absolute;
+    top: 73vh;
+    left: 0;
+}
+
+#popup{
+    position: fixed;
+    background: white;
+    top: 1%;
+    left: 0;
+    right: 0;
+    border: 1px solid black;
+    border-radius: .5em;
+    font-family: 'PP Neue Montreal';
+    text-align: left;
+    padding: .2em;
+    padding-top: .2em;
+    margin: 0.75;
+    margin-left: .75vw;
+    margin-right: .75vw;
+    display: block;
+    font-size: 18vh;
+    max-width: 100%;
+    justify-content: center;
+    line-height: 95%;
+    font-style: normal;
+    font-weight: 500;
+/*    line-height: normal;*/
+    text-transform: uppercase;
+    display: none;
+}
+
+#popup:hover{
+    overflow-y: hidden;
+}
+
+.countdown{
+    background: black;
+    color: white;
+    border-radius: 100%;
+    padding-top: .4em;
+    padding-left: .3em;
+    padding-right: .3em;
+    padding-bottom: .15em;
+    font-style: normal;
+    text-align: center;
+    font-family: 'BBB Strobo Variable';
+    -webkit-text-stroke: 2px;
+    line-height: 100%;
+    font-size: 17vh;
+    margin-top: -4.5vh;
+    margin-right: .75vw;
+    text-align: center;;
+    float: right; /* Align to the right */
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+#top{
+    margin-top: -1vh;
+    z-index: 1000;
+}
+#arrow{
+}
+
+.noellipsis {
+    display: none;
+}
+
+/* CSS for the toggle switch button */
+.toggle-switch {
+    width: 4.75vw; /* Set the width of the toggle switch */
+    height: 4vh; /* Set the height of the toggle switch */
+    background-color: black; /* Set the default background color */
+    border: 1px solid black;
+    border-radius: 25px; /* Set border-radius to make it round */
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add transition for smooth color change */
+}
+
+/* Styling for the switch's active state */
+.toggle-switch.active {
+    background-color: white; /* Set the background color when the toggle switch is active */
+
+}
+
+/* Styling for the switch handle */
+.toggle-switch:before {
+    content: "";
+    width: 25px; /* Set the width of the switch handle */
+    height: 25px; /* Set the height of the switch handle */
+    background-image: url('buffer2.png');
+    background-repeat: round;
+    border: 1px solid black;
+    border-radius: 50%; /* Make the switch handle round */
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 22%; /* Set initial position of the switch handle */
+    transition: left 0.2s; /* Add transition for smooth movement */
+}
+
+/* Styling for the switch handle's active state */
+.toggle-switch.active:before {
+    left: 75%; /* Move the switch handle to the right when the toggle switch is active */
+}
+
+.toggle-switch{
+    transform: scale(1.0);
+}
+.head{
+    display: flex;
+    justify-content: left;
+    /*margin: 0 auto;*/
+    top: 4vh;
+    left: .75vh;
+    right: 0;
+    position: fixed;
+    z-index: 100;
+}
+
+
+
+
+

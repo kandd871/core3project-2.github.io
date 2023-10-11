@@ -1,0 +1,256 @@
+body {
+     margin: .75vH;
+    height: 100%;
+}
+#popup:hover {
+     cursor: url("buffer.png"), auto;
+}
+
+.scroll-enabled {
+    overflow-y: scroll!important;
+}
+
+.scroll-disabled {
+    overflow-y: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 1.25vw;
+    position: relative;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+/*    background: url('../buffer.png') center bottom no-repeat;*/
+/*    background-size: contain;*/
+    position: relative;
+    background-color: black;
+}
+
+
+.timer {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; 
+}
+#arrow{
+    font-size: 2.5vh;
+}
+#timer {
+    background: white;
+    border: 1.25px solid;
+    border-radius: .4em;
+    font-family: 'BBB Strobo Variable';
+    text-align: center;
+    width: 3.25em;
+    padding: .15em;
+    padding-top: .35em;
+    margin: 0;
+    font-size: 4.75vw; /* Set initial font size */
+    transition: font-size .75s ease-in; /* Add transition for smoother font size change */
+    position: fixed;
+    z-index: 99;
+}
+
+p {
+    font-family: 'PP Neue Montreal';
+    font-size: 4.75vw;
+/*    line-height: 110%;*/
+}
+
+.body{
+	display: flex;
+	box-sizing: border-box;
+}
+
+.wholetext{
+	display: flex;
+	box-sizing: border-box;
+	width:  100%;
+    margin-top: 20vh;
+}
+
+.text {
+    
+}
+
+img{
+    border-radius: 10%;
+    display: block;
+}
+
+#img1{
+    margin-top: -16vh;
+    width: 35vw;
+    margin-left: 54vw;
+    margin-bottom: 41vh;
+    transition: 2s ease-out;
+}
+
+#img2{
+    width: 15vw;
+    margin-left: 11vw;
+    margin-bottom: -7vh;
+    transition: 0.5s ease-out;
+}
+
+#img3{
+    width: 30vw;
+    margin-left: 57vw;
+    margin-bottom: 32vh;
+    transition: 1.75s ease-out;
+}
+
+#img4{
+    width: 50vw;
+    margin-left: 1.75vw;
+    margin-bottom: 11vh;
+    transition: 3s ease-out;
+}
+
+#img5{
+    width: 15vw;
+    margin-left: 62vw;
+    margin-bottom: 26vh;
+    transition: 0.5s ease-out;
+}
+
+#img6{
+    width: 39vw;
+    margin-left: 59vw;
+    margin-bottom: 21vh;
+    transition: 2.35s ease-out;
+}
+
+#img7{
+    width: 17vw;
+    margin-left: 19vw;
+    margin-bottom: 50vh;
+    transition: 1s ease-out;
+}
+
+#img8{
+    width: 32vw;
+    margin-left: 5vw;
+    margin-bottom: 8vh;
+    transition: 1.5s ease-out;
+}
+
+
+#img9{
+    width: 10vw;
+    margin-left: 34vw;
+    margin-bottom: 20vh;
+    ransition: .25s ease-out;
+}
+
+
+#imgcontainer{
+    position: absolute;
+    top: 73vh;
+    left: 0;
+}
+
+
+#patience{
+   font-family: 'BBB Strobo Variable';
+   border: 1px solid black;
+   display: flex;
+   position: fixed;
+   color: black;
+   background: white;
+   justify-content: center;
+   margin: 0 auto;
+   top: .75vh;
+   left: 0;
+   border: 1px solid black;
+   right: 0;
+   border-radius: .25em; 
+   vertical-align: center;
+   padding-top: .3em;
+   width: 15%; 
+   font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+   font-size: 3.5vw;
+   z-index: 10;
+   visibility: hidden;
+/*   transform: rotate(5deg);*/
+
+}
+
+#popup{
+    position: fixed;
+    background: white;
+    top: 1%;
+    left: 0;
+    right: 0;
+    border: 1px solid black;
+    border-radius: .5em;
+    font-family: 'PP Neue Montreal';
+    text-align: left;
+    padding: .2em;
+    padding-top: .2em;
+    margin: 0.75;
+    margin-left: .75vw;
+    margin-right: .75vw;
+    display: block;
+    font-size: 18vh;
+    max-width: 96%;
+    justify-content: center;
+    line-height: 95%;
+    font-style: normal;
+    font-weight: 500;
+/*    line-height: normal;*/
+    text-transform: uppercase;
+    display: none;
+}
+
+#popup:hover{
+    overflow-y: hidden;
+}
+
+.countdown{
+    background: black;
+    color: white;
+    border-radius: 100%;
+    padding-top: .4em;
+    padding-left: .3em;
+    padding-right: .3em;
+    padding-bottom: .15em;
+    font-style: normal;
+    text-align: center;
+    font-family: 'BBB Strobo Variable';
+    -webkit-text-stroke: 2px;
+    line-height: 100%;
+    font-size: 17vh;
+    margin-top: -4.5vh;
+    margin-right: .75vw;
+    text-align: center;;
+    float: right; /* Align to the right */
+}
+
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    z-index: 1000;
+}
+
+#top{
+    margin-top: -1vh;
+}
+#arrow{
+}
+
