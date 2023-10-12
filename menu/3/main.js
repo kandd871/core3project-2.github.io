@@ -23,7 +23,7 @@ setInterval(function() {
     var totalSeconds = timeSpent;
 
     // Calculate font size based on total seconds
-    var targetFontSize = 1.75 + (0.0625 * totalSeconds); // You can adjust the multiplier for font size as needed
+    var targetFontSize = 1.75 + (0.000625 * totalSeconds); // You can adjust the multiplier for font size as needed
     timeSpentDiv.style.fontSize = targetFontSize + 'vw';
 }, 1000);
 
@@ -140,7 +140,7 @@ paragraphs.forEach(function(paragraph) {
 });
 
 // Call the function to show paragraphs after a delay
-setTimeout(showParagraphs, 10); // Delay the appearance of the first paragraph by 1 second
+setTimeout(showParagraphs, 2000); // Delay the appearance of the first paragraph by 1 second
 
 
 

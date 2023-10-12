@@ -19,7 +19,7 @@ setInterval(function() {
     var totalSeconds = timeSpent;
 
     // Calculate font size based on total seconds
-    var targetFontSize = 1 + (0.25 * totalSeconds); // You can adjust the multiplier for font size as needed
+    var targetFontSize = 1 + (0.0025 * totalSeconds); // You can adjust the multiplier for font size as needed
     timeSpentDiv.style.fontSize = targetFontSize + 'vw';
 }, 1000);
 

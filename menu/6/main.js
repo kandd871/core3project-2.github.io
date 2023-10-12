@@ -23,7 +23,7 @@ setInterval(function() {
     var totalSeconds = timeSpent;
 
     // Calculate font size based on total seconds
-    var targetFontSize = 4.75 + (0.0078125 * totalSeconds); // You can adjust the multiplier for font size as needed
+    var targetFontSize = 4.75 + (0.000078125 * totalSeconds); // You can adjust the multiplier for font size as needed
     timeSpentDiv.style.fontSize = targetFontSize + 'vw';
 
     // Check if 1 second has passed and hide img1

@@ -3,25 +3,31 @@ body {
     height: 100%;
     overflow-y: hidden;
 }
-/* width */
-::-webkit-scrollbar {
-    width: 1.25vw;
-    position: relative;
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  animation: overlayAnimation 1s ease-out 2s forwards;
+  z-index: 9999;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-    border: 1px solid black;
-    border-radius: 10px;
+.overlay:hover{
+    cursor: url('buffer.png'), auto;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-/*    background: url('../buffer.png') center bottom no-repeat;*/
-/*    background-size: contain;*/
-    position: relative;
-    background-color: black;
+@keyframes overlayAnimation {
+  0% {
+    opacity: 1;
+/*    filter: grayscale(0);*/
+  }
+  100% {
+    opacity: 0;
+/*    filter: grayscale(100%);*/
+    display: none;
+  }
 }
 
 #popup:hover {
@@ -373,6 +379,8 @@ img {
     margin-right: 8vw;
 }
 }
+/* Add this CSS for the black and white overlay */
+
 
 
 
