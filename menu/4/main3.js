@@ -7,7 +7,13 @@ function createBlackRectangle() {
 
     // Add event listener to remove the rectangle when clicked
     blackRectangle.addEventListener('click', function() {
-        blackRectangle.remove();
+        var maxWidth = window.innerWidth - blackRectangle.offsetWidth;
+        var maxHeight = window.innerHeight - blackRectangle.offsetHeight;
+        var randomPositionX = Math.floor(Math.random() * maxWidth);
+        var randomPositionY = Math.floor(Math.random() * maxHeight);
+
+        blackRectangle.style.left = randomPositionX + 'px';
+        blackRectangle.style.top = randomPositionY + 'px';
     });
 
     return blackRectangle;

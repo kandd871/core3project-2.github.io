@@ -6,11 +6,11 @@ var startButton = document.getElementById('startButton');
 var endButton = document.getElementById('endButton');
 var paragraphContainer = document.getElementById('paragraphContainer');
 var patience = document.getElementById('patience');
-
+var audio = document.getElementById('audio');
 // Initial countdown duration and typing speed
 var countdownDuration = 30;
 var typingSpeed = 75;
-
+audio.play();
 // Text to type
 var textToType = [
     "In the heart of a bustling city, amidst the cacophony of everyday life, there was a quaint little music shop named Harmony Haven. The owner, a wise old musician named Melody, understood the power of music as a refreshing break from the hustle and bustle of the world. People from all walks of life would step into the shop, weary from their daily struggles, seeking solace in the melodies that hung in the air.",
@@ -45,7 +45,10 @@ function typeText() {
     }
 }
 
-window.onload = typeText;
+window.onload = function() {
+    audio.play();
+    typeText(); // Start typing when audio starts playing
+};
 
 // Event listener for pause button
 pauseButton.addEventListener('click', function() {
@@ -54,9 +57,11 @@ pauseButton.addEventListener('click', function() {
     if (!isPaused) {
         // Resume typing if not paused
         typeText();
+        audio.play();
     } else {
         // Pause typing if clicked while typing
         clearTimeout(typingTimeout);
+        audio.pause();
     }
 });
 
@@ -66,6 +71,8 @@ startButton.addEventListener('click', function() {
     currentTextIndex = 0;
     currentCharacterIndex = 0;
     paragraphContainer.innerHTML = "<p></p>";
+    audio.currentTime = 0;
+    audio.play();
     // Start countdown and typing
     startCountdownAndPopup();
 });

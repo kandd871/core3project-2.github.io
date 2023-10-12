@@ -53,8 +53,8 @@ margin-bottom: -1vh;
    border: 1px solid black;
    display: flex;
    position: fixed;
-   color: white;
-   background: black;
+   color: black;
+   background: white;
    justify-content: center;
    margin: 0 auto;
    top: .75vh;
@@ -172,12 +172,9 @@ img{
     text-align: left;
     padding: .2em;
     padding-top: .2em;
-    margin: 0.75;
-    margin-left: .75vw;
-    margin-right: .75vw;
     display: block;
     font-size: 18vh;
-    max-width: 96%;
+    max-width: 100%;
     justify-content: center;
     line-height: 95%;
     font-style: normal;
@@ -246,6 +243,14 @@ a{
 }
 
 
+#arrow1{
+    display: flex;
+    justify-content: right;
+    font-size: 2.5vh;
+    position: fixed;
+    bottom: 0;
+    right: 0.75vh;
+}
 
 
 

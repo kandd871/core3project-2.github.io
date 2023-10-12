@@ -106,7 +106,6 @@ img{
 /*   transform: rotate(5deg);*/
 
 }
-
 #popup{
     position: fixed;
     background: white;
@@ -119,9 +118,6 @@ img{
     text-align: left;
     padding: .2em;
     padding-top: .2em;
-    margin: 0.75;
-    margin-left: .75vw;
-    margin-right: .75vw;
     display: block;
     font-size: 18vh;
     max-width: 100%;
@@ -133,7 +129,6 @@ img{
     text-transform: uppercase;
     display: none;
 }
-
 #popup:hover{
     overflow-y: hidden;
 }
@@ -188,4 +183,12 @@ a{
 }
 
 
+#arrow1{
+    display: flex;
+    justify-content: right;
+    font-size: 2.5vh;
+    position: fixed;
+    bottom: 0;
+    right: 0.75vh;
+}
 

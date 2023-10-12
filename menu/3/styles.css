@@ -94,7 +94,7 @@ body .text {
     color: White;
     margin: .375vh;
     line-height: 105%;
-    transition: ease .1s;
+    transition: color .1s ease-in-out , opacity 3s ease-in-out;
 }
 
 .paragraph:nth-child(1){
@@ -127,12 +127,9 @@ img{
     text-align: left;
     padding: .2em;
     padding-top: .2em;
-    margin: 0.75;
-    margin-left: .75vw;
-    margin-right: .75vw;
     display: block;
     font-size: 18vh;
-    max-width: 96%;
+    max-width: 100%;
     justify-content: center;
     line-height: 95%;
     font-style: normal;
@@ -141,7 +138,6 @@ img{
     text-transform: uppercase;
     display: none;
 }
-
 #popup:hover{
     overflow-y: hidden;
 }
@@ -206,3 +202,11 @@ a{
     transition: opacity 3s ease-in-out;
 }
 
+#arrow1{
+    display: flex;
+    justify-content: right;
+    font-size: 2.5vh;
+    position: fixed;
+    bottom: 0;
+    right: 0.75vh;
+}

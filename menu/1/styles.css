@@ -105,6 +105,7 @@ pre {
 
 img {
     border-radius: 7.5%;
+    border: 1px solid black;
     opacity: 0;
     position: absolute;
     top: 50%;
@@ -214,7 +215,7 @@ img {
 #popup{
     position: fixed;
     background: white;
-    top: 1%;
+    top: 0%;
     left: 0;
     right: 0;
     border: 1px solid black;
@@ -223,12 +224,9 @@ img {
     text-align: left;
     padding: .2em;
     padding-top: .2em;
-    margin: 0.75;
-    margin-left: .75vw;
-    margin-right: .75vw;
     display: block;
     font-size: 18vh;
-    max-width: 96%;
+    max-width: 100%;
     justify-content: center;
     line-height: 95%;
     font-style: normal;
@@ -236,6 +234,7 @@ img {
 /*    line-height: normal;*/
     text-transform: uppercase;
     display: none;
+    margin: .75vh;
 }
 
 #popup:hover{
@@ -264,7 +263,7 @@ img {
 
 #arrow1{
     display: flex;
-    margin-top: -.75vh;
+    margin-top: -1vh;
     justify-content: right;
     font-size: 2.5vh;
 }
@@ -277,5 +276,104 @@ img {
     color: black;
     text-shadow: 0px 0px 0px rgba(255,255,255,0);
 }
+
+@media only screen and (max-width:1000px){
+    body{
+        width: 100%;    }
+    .body, pre {
+        font-size: 3.5vw;
+        line-height: 2vh;
+        max-width: 100%;
+    }
+    .image-container{
+        position: relative!important;
+        margin-top: 5vh;
+        display: block;
+        margin: 0 auto;
+        margin-right: 10vh;
+        margin-top: 78vh;
+        transform: scale(1.25);
+    }
+
+    #popup{    
+    /*margin: 10vw;*/
+    position: fixed;
+    background: white;
+    top: 1%;
+    left: 0;
+    right: 0;
+    border: 1px solid black;
+    border-radius: .5em;
+    font-family: 'PP Neue Montreal';
+    text-align: left;
+    padding: .2em;
+/*    width: 85%;*/
+    padding-top: .2em;
+    display: block;
+    font-size: 7.25vw;
+    max-width: 100%;
+    justify-content: center;
+    line-height: 95%;
+    font-style: normal;
+    height: 100%;
+    font-weight: 500;
+/*    line-height: normal;*/
+    text-transform: uppercase;
+    display: none;
+}
+.countdown{
+    background: black;
+    color: white;
+    border-radius: 100%;
+    padding-top: .4em;
+    padding-left: 0em;
+    padding-right: 0em;
+    padding-bottom: .15em;
+    font-style: normal;
+    text-align: center;
+    font-family: 'BBB Strobo Variable';
+    -webkit-text-stroke: 2px;
+    line-height: 100%;
+    font-size: 8.5vh;
+    margin-top: 4vh;
+    display: block;
+    margin-right: .75vw;
+    text-align: center;
+    float: none;
+}
+#popup:hover{
+    overflow-y: scroll;
+}
+.timer {
+    width: 98%;
+}
+#arrow1{
+    margin-right: 2vw;
+}
+}
+
+@media only screen and (max-width: 400px){
+    #popup{
+        font-size: 7.25vh;
+        max-width: 85.5%;
+        padding: 0.12em;
+        margin-top: 0;
+        height: 90%;
+        justify-content: center;
+    }
+    .countdown{
+        width: 31%;
+        margin-top: 1vh;
+    }
+    .timer {
+    width: 92%;
+}
+#arrow1{
+    margin-top: 11vh;
+    margin-right: 8vw;
+}
+}
+
+
 
 

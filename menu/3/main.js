@@ -122,5 +122,25 @@ setTimeout(function() {
 showInstruct();
 
 
+var paragraphs = document.querySelectorAll('.paragraph');
+var index = 0;
+
+function showParagraphs() {
+    if (index < paragraphs.length) {
+        paragraphs[index].style.opacity = '1';
+        index++;
+        setTimeout(showParagraphs, 700); // Set the delay between paragraphs here (0.5s)
+    }
+}
+
+// Initially hide all paragraphs
+paragraphs.forEach(function(paragraph) {
+    paragraph.style.opacity = '0';
+    // paragraph.style.transition = 'opacity 3s ease-in-out';
+});
+
+// Call the function to show paragraphs after a delay
+setTimeout(showParagraphs, 10); // Delay the appearance of the first paragraph by 1 second
+
 
 

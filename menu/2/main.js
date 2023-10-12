@@ -9,7 +9,6 @@ var text = document.querySelector('.text');
 var countdownElement = document.getElementById('countdown');
 var popupElement = document.getElementById('popup');
 var buttons = document.querySelectorAll('button')
-
 var countdownDuration = 30; // Initial countdown duration
 
 var possibleTexts = [

@@ -107,6 +107,7 @@ captureButton.addEventListener('click', function() {
     // Create a new image element and set its source to the captured image
     var capturedImage = new Image();
     capturedImage.src = canvas.toDataURL('image/png');
+    capturedImage.style.border = '1px solid black';
     
     // Append the captured image to the capturedImageContainer
     capturedImageContainer.innerHTML = '';
@@ -147,3 +148,4 @@ nameElement.addEventListener('mouseout', function() {
     // Hide the captured image when the mouse moves away from the name
     capturedImageContainer.style.display = 'none';
 });
+

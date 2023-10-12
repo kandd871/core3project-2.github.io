@@ -55,7 +55,7 @@ body {
     height: 600px; /* Set the desired height of the square box */
     overflow: hidden;
     border-radius: 10%;
-    margin-bottom: 1vh;
+    margin-bottom: .75vh;
     border: 1px solid black;
 }
 
@@ -69,13 +69,13 @@ body {
     display: flex;
     justify-content: left;
     align-items: left;
-    width: 600px;
-    height: 600px;
+    width: 800px;
+    height: 800px;
 }
 
 #capturedImage {
-   width: 600px;
-    height: 600px;
+   width: 800px;
+    height: 800px;
     border: 1px solid black;
 }
 #arrow{
@@ -120,7 +120,7 @@ button:hover{
     display: none;
 }
 .input{
-    margin-top: 1.5vh;
+    margin-top: .75vh;
     display: block;
     justify-content: center;
 }
@@ -143,7 +143,7 @@ p {
 	display: flex;
 	box-sizing: border-box;
 	width:  100%;
-    margin-top: .5vh;
+    margin-top: -2vh;
 }
 
 .text,.end {
@@ -170,9 +170,6 @@ img{
     text-align: left;
     padding: .2em;
     padding-top: .2em;
-    margin: 0.75;
-    margin-left: .75vw;
-    margin-right: .75vw;
     display: block;
     font-size: 18vh;
     max-width: 100%;
@@ -209,7 +206,9 @@ img{
     float: right; /* Align to the right */
 }
 
-
+.end{
+    margin-bottom: -4vh;
+}
 a{
     text-decoration: none;
     cursor: pointer;
@@ -225,15 +224,17 @@ a{
 }
 #down{
     font-family: 'PP Neue Montreal';
-    font-size: 16vh;
-    vertical-align: bottom most;
-    align-content: bottom;
-    justify-content: bottom;
-    padding-left: .75vw;
-    margin-top: auto;
-    line-height: 90%;
-    font-weight: 100;
+    padding-left: 4vw;
     visibility: hidden;
 }
-
+#down img{
+    display: flex;
+    height: 600px;
+}
+#arrow1{
+    display: flex;
+    justify-content: right;
+    font-size: 2.5vh;
+    margin-top: 1vh;
+}
 

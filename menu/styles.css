@@ -46,3 +46,9 @@ img:hover {
         transform: scale(1.5);
     }
 }
+    @media only screen and (max-width: 540px) {
+        .text{
+            font-size: 7vw;
+            line-height: 100%;
+        }
+    }

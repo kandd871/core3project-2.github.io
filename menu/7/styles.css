@@ -67,7 +67,7 @@ p {
 	display: flex;
 	box-sizing: border-box;
 	width:  100%;
-    margin-top: 10vh;
+    margin-top: 11vh;
 }
 
 .text {
@@ -77,70 +77,6 @@ p {
 img{
     border-radius: 10%;
     display: block;
-}
-
-#img1{
-    width: 35vw;
-    margin-left: 54vw;
-    margin-bottom: 41vh;
-    transition: 2s ease-out;
-}
-
-#img2{
-    width: 15vw;
-    margin-left: 11vw;
-    margin-bottom: -7vh;
-    transition: 0.5s ease-out;
-}
-
-#img3{
-    width: 30vw;
-    margin-left: 57vw;
-    margin-bottom: 32vh;
-    transition: 1.75s ease-out;
-}
-
-#img4{
-    width: 50vw;
-    margin-left: 1.75vw;
-    margin-bottom: 11vh;
-    transition: 3s ease-out;
-}
-
-#img5{
-    width: 15vw;
-    margin-left: 62vw;
-    margin-bottom: 26vh;
-    transition: 0.5s ease-out;
-}
-
-#img6{
-    width: 39vw;
-    margin-left: 59vw;
-    margin-bottom: 92vh;
-    transition: 2.35s ease-out;
-}
-
-#img7{
-    width: 30vw;
-    margin-left: 5vw;
-    margin-bottom: 11vh;
-    transition: 1s ease-out;
-}
-
-
-#img8{
-    width: 10vw;
-    margin-left: 34vw;
-    margin-bottom: 20vh;
-    ransition: .25s ease-out;
-}
-
-
-#imgcontainer{
-    position: absolute;
-    top: 73vh;
-    left: 0;
 }
 
 #popup{
@@ -155,9 +91,6 @@ img{
     text-align: left;
     padding: .2em;
     padding-top: .2em;
-    margin: 0.75;
-    margin-left: .75vw;
-    margin-right: .75vw;
     display: block;
     font-size: 18vh;
     max-width: 100%;
@@ -212,11 +145,11 @@ a{
 
 /* CSS for the toggle switch button */
 .toggle-switch {
-    width: 4.75vw; /* Set the width of the toggle switch */
-    height: 4vh; /* Set the height of the toggle switch */
+    width: 8vw; /* Set the width of the toggle switch */
+    height: 6.5vh; /* Set the height of the toggle switch */
     background-color: black; /* Set the default background color */
     border: 1px solid black;
-    border-radius: 25px; /* Set border-radius to make it round */
+    border-radius: 40px; /* Set border-radius to make it round */
     position: relative;
     cursor: pointer;
     transition: background-color 0.3s; /* Add transition for smooth color change */
@@ -231,8 +164,8 @@ a{
 /* Styling for the switch handle */
 .toggle-switch:before {
     content: "";
-    width: 25px; /* Set the width of the switch handle */
-    height: 25px; /* Set the height of the switch handle */
+    width: 43px; /* Set the width of the switch handle */
+    height: 43px; /* Set the height of the switch handle */
     background-image: url('buffer2.png');
     background-repeat: round;
     border: 1px solid black;
@@ -256,14 +189,18 @@ a{
     display: flex;
     justify-content: left;
     /*margin: 0 auto;*/
-    top: 4vh;
+    top: 7vh;
     left: .75vh;
     right: 0;
     position: fixed;
     z-index: 100;
 }
 
-
+#arrow1{
+    display: flex;
+    justify-content: right;
+    font-size: 2.5vh;
+}
 
 
 
