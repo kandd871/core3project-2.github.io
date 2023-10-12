@@ -214,3 +214,13 @@ a{
     bottom: 0;
     right: 0.75vh;
 }
+@media only screen and (max-height: 800px){
+    #popup{
+        padding: .25em;
+        padding-right: 1em;
+        height:  90%;
+    }
+    .countdown{
+       margin-right: -6vw; 
+    }
+}

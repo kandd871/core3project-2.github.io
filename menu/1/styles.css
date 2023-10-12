@@ -25,7 +25,6 @@ body {
   }
   100% {
     opacity: 0;
-/*    filter: grayscale(100%);*/
     display: none;
   }
 }
@@ -379,7 +378,16 @@ img {
     margin-right: 8vw;
 }
 }
-/* Add this CSS for the black and white overlay */
+@media only screen and (max-height: 800px){
+    #popup{
+        padding: .25em;
+        padding-right: 1em;
+        height:  90%;
+    }
+    .countdown{
+       margin-right: -6vw; 
+    }
+}
 
 
 
