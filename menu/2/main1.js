@@ -45,11 +45,6 @@ function typeText() {
     }
 }
 
-window.onload = function() {
-    audio.play();
-    typeText(); // Start typing when audio starts playing
-};
-
 // Event listener for pause button
 pauseButton.addEventListener('click', function() {
     isPaused = !isPaused;
@@ -87,5 +82,13 @@ endButton.addEventListener('click', function() {
         patience.style.visibility = 'hidden';
     }, 1500);
 });
+
+window.onload = function() {
+    // Delay the start of typing by 2 seconds
+    setTimeout(function() {
+        audio.play();
+        typeText(); // Start typing when audio starts playing
+    }, 3000); // 2000 milliseconds = 2 seconds
+};
 
 
