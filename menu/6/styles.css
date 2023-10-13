@@ -13,7 +13,7 @@ body {
 .scroll-disabled {
     overflow-y: hidden;
 }
-/*
+
 .overlay {
   position: fixed;
   top: 0;
@@ -39,7 +39,7 @@ body {
 /*    filter: grayscale(100%);*/
     display: none;
   }
-}*/
+}
 
 
 .timer {
