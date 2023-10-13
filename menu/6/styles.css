@@ -13,7 +13,7 @@ body {
 .scroll-disabled {
     overflow-y: hidden;
 }
-
+/*
 .overlay {
   position: fixed;
   top: 0;
@@ -39,7 +39,7 @@ body {
 /*    filter: grayscale(100%);*/
     display: none;
   }
-}
+}*/
 
 
 .timer {
@@ -99,8 +99,8 @@ img{
 #img1{
     margin-top: -16vh;
     width: 35vw;
-    margin-left: 54vw;
-    margin-bottom: 41vh;
+    margin-left: 37vw;
+    margin-bottom: 35vh;
     transition: 2s ease-out;
 }
 
@@ -121,7 +121,7 @@ img{
 #img4{
     width: 50vw;
     margin-left: 1.75vw;
-    margin-bottom: 11vh;
+    margin-bottom: 4vh;
     transition: 3s ease-out;
 }
 
@@ -164,7 +164,7 @@ img{
 
 #imgcontainer{
     position: absolute;
-    top: 73vh;
+    top: 74vh;
     left: 0;
 }
 
