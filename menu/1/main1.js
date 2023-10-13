@@ -67,7 +67,7 @@ setTimeout(showPopup, 60000);
 // Rest of your code for image hover and other functionalities
 for (var i = 1; i <= 29; i++) {
     var imageElement = document.createElement('img');
-    imageElement.src = 'photos/' + i + '.jpg';
+    imageElement.src = 'photos/' + i + '.JPG';
     imageElement.id = 'image' + i;
     container.appendChild(imageElement);
 
